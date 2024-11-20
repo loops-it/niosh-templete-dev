@@ -222,11 +222,11 @@
    
 }
 .footer-links ul li {
-    margin-bottom: 15px; /* Increases space between each link */
+    margin-bottom: 15px; 
 }
 
 .footer-contact p {
-    margin-bottom: 15px; /* Increases space between each contact item */
+    margin-bottom: 15px; 
 }
 
 /* Media Query for Mobile */
@@ -242,7 +242,7 @@
     }
 
     html, body {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-x: hidden; 
     }
     .bg-light {
 
@@ -347,6 +347,7 @@
     .col-lg-6 {
         width: 100% !important;
     }
+   
     .about-section .row {
         display: flex;
         flex-direction: column;
@@ -367,13 +368,13 @@
 
     .about-section .about-heading {
         font-size: 20px;
-        line-height: 28px;
+        line-height: 25px;
         margin-bottom: 10px;
     }
 
     .about-section .about-title {
         font-size: 25px;
-        line-height: 35px;
+        line-height: 32px;
         margin-bottom: 15px;
     }
 
@@ -382,13 +383,15 @@
         line-height: 20px;
         text-align: justify;
     }
+   
 .footer-paragraph{
     font-size: 14px;
 }
 .footer-heading{
-    font-size: 14px !important;
-    
+    font-size: 14px !important;  
+    margin-top: 20px !important;
 }
+
 }
 
 /* Media Query for Tablets */
