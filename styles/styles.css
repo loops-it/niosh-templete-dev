@@ -516,6 +516,7 @@
         height: 45vh;
         background-size: cover;
         width: 100%;
+        margin-top: -45px;
     }
 
     .hero-text {
@@ -745,6 +746,7 @@
         height: 50vh;
         background-size: cover;
         width: 100%;
+        margin-top: -45px;
     }
 
     .hero-text {
@@ -839,7 +841,7 @@ margin-bottom: 80px !important;
         line-height: 35px;
         margin-bottom: 15px;
     }
-    .process-section .about-title {
+    .-section .about-title {
         font-size: 30px;
         line-height: 35px;
         margin-bottom: 15px;
