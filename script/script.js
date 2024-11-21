@@ -1,17 +1,37 @@
-// Ensure the navbar margin remains consistent
-document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-    link.addEventListener('click', function () {
-        const navbar = document.querySelector('.navbar');
-        if (navbar) {
-            navbar.style.margin = '18px'; // Reset margin
-        }
-    });
-});
 
-// Optional: Handle collapse toggle to maintain the design
-document.querySelector('.navbar-toggler').addEventListener('click', function () {
-    const navbar = document.querySelector('.navbar');
-    if (navbar) {
-        navbar.style.margin = '18px'; // Reset margin when toggling
-    }
-});
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  const slides = document.getElementsByClassName("testimonial-slide");
+  const dots = document.getElementsByClassName("dot");
+ 
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  
+ 
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  
+  
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  
+
+  setTimeout(showSlides, 2000);
+}
+
+function currentSlide(n) {
+  slideIndex = n - 1; 
+  showSlides();
+}
