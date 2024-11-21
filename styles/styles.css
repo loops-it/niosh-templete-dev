@@ -167,9 +167,11 @@
     padding: 15px; 
     height: 170px;
     width: 100%;
-    text-align: justify; 
+    text-align: left; 
   }
-
+  .container, .container-lg, .container-md, .container-sm {
+    max-width: 100%;
+  }
 /* Polygon Shape */
 .polygon-shape {
     position: relative;
@@ -796,6 +798,15 @@
         width: 100% !important;
         margin-bottom: 0px;
     }
+    .polygon-text{
+        font-size: 10px;
+        line-height: 20px !important;
+    }
+    .process-text{
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left;
+    }
 .process-section{
 margin-bottom: 80px !important;
 }
@@ -828,7 +839,11 @@ margin-bottom: 80px !important;
         line-height: 35px;
         margin-bottom: 15px;
     }
-
+    .process-section .about-title {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
     .about-section .about-paragraph {
         font-size: 20px;
         line-height: 35px;
@@ -847,13 +862,14 @@ margin-bottom: 80px !important;
     .testimonial-section .about-title {
         font-size: 30px;
         line-height: 35px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         text-align: center;
 
     }
     .testimonial-section .about-paragraph {
         font-size: 20px;
         line-height: 35px;
+        margin-bottom: 50px;
         text-align: justify;
     }
     .testimonial-text{
