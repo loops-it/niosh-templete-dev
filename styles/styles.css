@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
 .logo {
     height: 50px;
     width: 130px;
@@ -5,7 +7,9 @@
 }
 
 .navbar {
-    margin: 18px;
+    margin: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
     border-radius: 20px;
     height: 13vh;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -16,13 +20,14 @@
     color: #002E5B;
     font-size: 16px;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     line-height: 24px;
     text-align: center;
-    margin: 0 40px;
+    margin: 0 10px;
 }
 
 .section-padding {
-    padding: 40px;
+    padding: 50px;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -31,6 +36,7 @@
     color: #002E5B;
     font-size: 16px;
     font-weight: 700;
+    font-family: 'Poppins', sans-serif;
     line-height: 24px;
     text-align: center;
 }
@@ -41,6 +47,7 @@
     border-width: 1px;
     border-radius: 10px;
     width: 120px;
+    font-family: 'Poppins', sans-serif;
     height: 45px;
     align-content: center;
     font-size: 16px;
@@ -55,6 +62,7 @@
     font-weight: 700;
     width: 114px;
     height: 45px;
+    font-family: 'Poppins', sans-serif;
     align-content: center;
     border-radius: 10px;
     margin-right: 20px;
@@ -66,7 +74,7 @@
     background-size: cover;
     background-position: top;
     z-index: 1;
-    margin-top: -140px;
+    margin-top: -185px;
     background-repeat: no-repeat;
 }
 
@@ -81,18 +89,21 @@
 .hero-text1 {
     color: #002E5B;
     font-weight: 700;
-    font-size: 50px;
-    line-height: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    line-height: 50px;
 }
 
 .hero-text2 {
     color: #002E5B;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
     line-height: 50px;
 }
 
 /*about sections*/
+
 
 .col-lg-6 .about-content {
     width: 50%;
@@ -111,6 +122,7 @@
     color: #002E5B;
     font-weight: 700;
     font-size: 28px;
+    font-family: 'Poppins', sans-serif;
     line-height: 10px;
     margin-bottom: 15px;
 }
@@ -119,6 +131,7 @@
     font-size: 35px;
     line-height: 45px;
     color: #272B34;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -126,6 +139,7 @@
 .about-paragraph {
     font-size: 18px;
     line-height: 30px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     height: 100%;
     display: flex;
@@ -147,19 +161,19 @@
 }
 
 .process-icon {
-    width: 50px;
-    height: 50px;
+    width: 92px;
+    height: 92px;
     margin-bottom: 30px;
     margin-top: 30px;
 }
 
 .process-text {
-    font-size: 14px;
     line-height: 25px;
     color: #79839A;
+    font-family: 'Poppins', sans-serif;
     border: 1px solid #002E5B;
     padding: 15px;
-    height: 155px;
+    height: 185px;
     width: 100%;
     text-align: left;
 }
@@ -192,7 +206,6 @@
 /* Polygon Shape */
 .polygon-shape {
     position: relative;
-    display: inline-block;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -206,8 +219,9 @@
     top: 40%;
     z-index: 2;
     left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    transform: translate(-50%, -50%);
     line-height: 25px;
     color: #000000;
     font-weight: 700;
@@ -250,13 +264,15 @@
 }
 
 .testimonial-section .about-paragraph {
-    margin-right: 20px;
+    margin-right: 50px;
+    font-size: 18px;
 }
 
 .testimonial-text {
     font-size: 18px;
     color: #191D25;
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     line-height: 30px;
 }
@@ -276,6 +292,7 @@
 .testimonial-name {
     font-size: 20px;
     font-weight: 700;
+    font-family: 'Poppins', sans-serif;
     color: #272B34;
 }
 
@@ -337,7 +354,8 @@
 
 .footer-logo p {
     font-size: 14px;
-    color: #79839A;
+    font-family: 'Poppins', sans-serif;
+    color: #6F6C90;
     margin-bottom: 15px;
 }
 
@@ -345,6 +363,7 @@
 .footer-contact h5 {
     font-size: 18px;
     font-weight: 700;
+    font-family: 'Poppins', sans-serif;
     color: #002E5B;
     margin-bottom: 20px;
 }
@@ -359,19 +378,21 @@
 .footer-links ul li,
 .footer-contact p {
     font-size: 14px;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.8;
+    color: #6F6C90;
 }
 
 .footer-links ul li a,
 .footer-bottom a {
-    color: #002E5B;
+    color: #6F6C90;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-contact p i {
     margin-right: 10px;
-    color: #002E5B;
+    color: #6F6C90;
 }
 
 .footer-bottom {
@@ -380,6 +401,7 @@
     font-size: 14px;
     color: #79839A;
     display: flex;
+    font-family: 'Poppins', sans-serif;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -388,12 +410,13 @@
 .footer-bottom p {
     margin: 0;
     font-size: 14px;
+    font-family: 'Poppins', sans-serif;
     color: #6F6C90;
     line-height: 1.5;
 }
 
 .footer-bottom p a {
-    color: #002E5B;
+    color: #6F6C90;
     text-decoration: none;
     margin: 0 5px;
 }
@@ -405,6 +428,7 @@
 .social-icons a {
     font-size: 16px;
     color: #002E5B;
+    font-family: 'Poppins', sans-serif;
     margin-right: 10px;
     display: inline-block;
 }
@@ -417,6 +441,7 @@
     color: #6F6C90;
     font-size: 18px;
     font-weight: 400;
+    font-family: 'Poppins', sans-serif;
     line-height: 30px;
 }
 
@@ -424,6 +449,7 @@
     color: #6F6C90;
     font-size: 18px;
     font-weight: 400;
+    font-family: 'Poppins', sans-serif;
     line-height: 20px;
     align-items: center;
 
@@ -452,6 +478,7 @@
 .footer-paragraph {
     color: #6F6C90;
     font-size: 18px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     line-height: 30px;
 }
@@ -460,6 +487,7 @@
     color: #6F6C90;
     font-size: 18px;
     font-weight: 400;
+    font-family: 'Poppins', sans-serif;
     line-height: 20px;
     align-items: center;
 
@@ -496,10 +524,10 @@
     }
 
     .navbar-light .navbar-nav .nav-link {
-        color: rgb(0, 0, 0) !important;
+        color: #002E5B !important;
         font-size: 16px;
         font-weight: 500;
-        text-align: left;
+        text-align: left !important;
     }
 
     .navbar-toggler {
@@ -560,6 +588,10 @@
         font-size: 14px;
         margin: 5px 0;
         flex-direction: column;
+    }
+
+    .section-padding {
+        padding: 30px;
     }
 
     /* hero */
@@ -638,6 +670,7 @@
     .about-section .about-paragraph {
         font-size: 14px;
         line-height: 20px;
+        margin-right: 0px;
         text-align: justify;
     }
 
@@ -688,6 +721,7 @@
 
     .testimonial-section .about-paragraph {
         font-size: 14px;
+        margin-right: 0px;
         line-height: 20px;
         text-align: justify;
     }
@@ -718,6 +752,7 @@
     .footer-bottom p {
         margin: 5px 0;
         font-size: 14px;
+        text-align: left;
         color: #6F6C90;
         line-height: 1.5;
     }
@@ -742,7 +777,7 @@
     .navbar {
         flex-direction: column;
         text-align: center;
-        margin: none !important;
+        margin: 0px !important;
         padding: 10px 0;
         background-color: #ffffff !important;
         border-radius: 20px;
@@ -771,33 +806,42 @@
         background-color: rgba(255, 255, 255, 0.9);
         padding: 15px;
         border-radius: 10px;
-        height: 60vh;
+        height: 40vh;
     }
-
-    .navbar-light .navbar-nav .nav-link {
-        color: rgb(0, 0, 0) !important;
-        text-align: left;
-    }
-
-    .navbar-toggler {
-        border: none;
-    }
-
-    .navbar-light .navbar-toggler {
-        color: rgb(255, 255, 255);
-    }
-
-    .navbar-light .navbar-nav {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
+   
     .navbar-light .navbar-nav .nav-link {
         margin: 10px 0;
         font-size: 18px;
+        font-weight: 400;
+        color: #002E5B !important;
+        text-align: left !important;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link:focus {
         font-weight: 600;
     }
 
+    .navbar-light .navbar-nav .nav-link.active {
+        font-weight: 700;
+        color: #004080;
+        border-left: 3px solid #004080;
+        padding-left: 10px;
+    }
+    .navbar-toggler {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        background-color: transparent;
+    }
+    
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
     .nav-buttons {
         display: flex;
         flex-direction: column;
@@ -897,7 +941,7 @@
     /*process section*/
     .shape-image {
         width: 100%;
-        height: 100px;
+        height: 140px;
     }
 
     .polygon-text {
@@ -907,23 +951,23 @@
 
     .process-arrow {
         top: 13%;
-        left: calc(25% - 55px);
-        width: 110px;
+        left: calc(25% - 40px);
+        width: 80px;
     }
 
     .process-arrow:nth-child(2) {
-        left: calc(50% - 55px);
+        left: calc(50% - 40px);
     }
 
     .process-arrow:nth-child(4) {
-        left: calc(75% - 55px);
+        left: calc(75% - 40px);
     }
 
     .process-text {
         font-size: 16px;
         line-height: 18px;
         text-align: left;
-        height: 200px;
+        height: 250px;
     }
 
     .process-section {
@@ -996,9 +1040,10 @@
 
     .footer-bottom {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 70px !important;
         border-top: 1px solid #E3E3E3;
         padding-top: 10px;
+        margin-bottom: -50px;
     }
 
     .footer-links ul,
