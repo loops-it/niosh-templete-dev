@@ -19,7 +19,7 @@
 
 <body>
     <!-- navbar-start -->
-    <div class="position-fixed top-0 left-0 w-100" style="z-index: 999999; display: flex
+    <div class="position-absolute top-0 left-0 w-100" style="z-index: 999999; display: flex
     ; justify-content: center;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -59,53 +59,62 @@
     </div>
     <!-- navbar-end -->
     <!-- Hero Carousel -->
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <!-- Carousel Indicators -->
-        <div class="carousel-indicators ">
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" class=""
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" class=""
-                aria-label="Slide 3"></button>
-        </div>
+    <div class="carousel-container">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" class=""
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" class=""
+                    aria-label="Slide 3"></button>
+            </div>
 
-        <!-- Carousel Inner -->
-        <div class="carousel-inner">
-            <!-- First Slide -->
-            <div class="carousel-item active">
-                <div class="d-flex align-items-center justify-content-start background-image-hero section-padding"
-                    style="background-image: url('./images/heroo.png');">
-                    <div class="hero-text">
-                        <h1 class="hero-text1">“NIOSH” Your Trusted OSH Partner</h1>
-                        <h2 class="hero-text2">We Ensure Your Safety</h2>
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                    <div class="d-flex align-items-center justify-content-start background-image-hero section-padding"
+                        style="background-image: url('./images/hero.png');">
+                        <div class="hero-text d-none d-lg-block">
+                            <h1 class="hero-text1">“NIOSH” Your Trusted OSH Partner</h1>
+                            <h2 class="hero-text2">We Ensure Your Safety</h2>
+                        </div>
+                    </div>
+                    <div class="hero-text d-block d-lg-none">
+                        <h1 class="hero-text1-mobile">“NIOSH” Your Trusted OSH Partner</h1>
+                        <h2 class="hero-text2-mobile">We Ensure Your Safety</h2>
+                    </div>
+                </div>
+                <!-- Second Slide -->
+                <div class="carousel-item">
+                    <div class="d-flex align-items-center justify-content-start background-image-hero section-padding"
+                        style="background-image: url('./images/heroo.png');">
+                        <div class="hero-text d-none d-lg-block">
+                            <h1 class="hero-text1">Revolutionizing Workplace Safety</h1>
+                            <h2 class="hero-text2">through Smart Learning</h2>
+                        </div>
+                    </div>
+                    <div class="hero-text d-block d-lg-none">
+                        <h1 class="hero-text1-mobile">Revolutionizing Workplace Safety</h1>
+                        <h2 class="hero-text2-mobile">through Smart Learning</h2>
+                    </div>
+                </div>
+                <!-- Third Slide -->
+                <div class="carousel-item">
+                    <div class="d-flex align-items-center justify-content-start background-image-hero section-padding"
+                        style="background-image: url('./images/heroo.png');">
+                        <div class="hero-text">
+                            <h1 class="hero-text1">Play. Watch. Chat. Stay Safe.</h1>
+                            <!-- <h2 class="hero-text2">Healthy Workplaces</h2> -->
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Second Slide -->
-            <div class="carousel-item">
-                <div class="d-flex align-items-center justify-content-start background-image-hero section-padding"
-                    style="background-image: url('./images/heroo.png');">
-                    <div class="hero-text">
-                        <h1 class="hero-text1">Revolutionizing Workplace Safety</h1>
-                        <h2 class="hero-text2">through Smart Learning</h2>
-                    </div>
-                </div>
-            </div>
-            <!-- Third Slide -->
-            <div class="carousel-item">
-                <div class="d-flex align-items-center justify-content-start background-image-hero section-padding"
-                    style="background-image: url('./images/heroo.png');">
-                    <div class="hero-text">
-                        <h1 class="hero-text1">Play. Watch. Chat. Stay Safe.</h1>
-                        <!-- <h2 class="hero-text2">Healthy Workplaces</h2> -->
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Carousel Controls -->
-        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <!-- Carousel Controls -->
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
@@ -113,12 +122,13 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button> -->
+        </div>
     </div>
 
-
+    <!-- Mobile Hero Text -->
     <div class="hero-text-mobile">
-        <h1 class="hero-text1">Occupational Safety,</h1>
-        <h2 class="hero-text2">Health and Welfare for all</h2>
+        <h1 class="hero-text1-mobile"></h1>
+        <h2 class="hero-text2-mobile"></h2>
     </div>
     <!-- Hero Image with Text start -->
 
@@ -154,7 +164,7 @@
                 </div>
                 <div class="col-lg-6 about-content">
                     <h3 class="about-heading">Way Forward</h3>
-                    <h2 class="about-title">Occupational Safety, Health & Welfare for all</h2>
+                    <h2 class="about-title">Future of National Occupational Safety and Health in Sri Lanka</h2>
                     <p class="about-paragraph">
                         NIOSH is introducing a new Portal to support the industry with AI-powered support bot, a
                         comprehensive Learning Management System (LMS) and a Membership Portal fostering OSH
@@ -167,8 +177,9 @@
         <!-- Process Section start -->
         <div class="container-section process-section" style="max-width: 1544px; margin: 0 auto;">
             <div class="text-center">
-                <h3 class="about-heading">Process</h3>
-                <h2 class="about-title">Occupational Safety, Health & <br> Welfare for all</h2>
+                <h3 class="about-heading">Segments</h3>
+                <h2 class="about-title">Revolutionizing Workplace Safety through Smart Learning
+                </h2>
             </div>
 
             <div class="container">
@@ -238,7 +249,7 @@
         <div class="col-lg-6 about-content testimonial-section" style="max-width: 1544px; margin: 0 auto;">
             <div class="text-center">
                 <h3 class="about-heading">Testimonials</h3>
-                <h2 class="about-title">Occupational Safety, Health & <br> Welfare for all</h2>
+                <h2 class="about-title">Appreciations to NIOSH</h2>
             </div>
             <!-- <h3 class="about-heading">Testimonials</h3>
             <h2 class="about-title">Occupational Safety,<br>Health & Welfare for all</h2> -->
@@ -251,7 +262,7 @@
             <div class="testimonial-slider">
                 <!-- Slide 1 -->
                 <div class="testimonial-slide">
-                    <p class="testimonial-text" style="padding-left: 20px;">
+                    <p class="testimonial-text">
                         I am thrilled to share my experience with NIOSH where I obtained my diploma in Occupational
                         Health and Safety. The staff were exceptionally professional and supportive throughout my
                         studies, providing valuable insights and guidance that significantly enhanced my knowledge and
@@ -265,19 +276,13 @@
                         <img src="images/testimonial1.png" alt="Avatar" class="testimonial-avatar">
                         <div>
                             <h4 class="testimonial-name">T.G.D. Peiris</h4>
-                            <div class="testimonial-stars">
-                                <span class="star full">&#9733;</span>
-                                <span class="star full">&#9733;</span>
-                                <span class="star full">&#9733;</span>
-                                <span class="star full">&#9733;</span>
-                                <span class="star full">&#9733;</span>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
                 <!-- Slide 2 -->
                 <div class="testimonial-slide">
-                    <p class="testimonial-text" style="padding-left: 20px;">
+                    <p class="testimonial-text">
                         Reflecting on my career as a Health, Safety, and Environment officer (HSEO) professional, I can
                         confidently say that my journey began with the invaluable foundation laid by the National
                         Institute of Occupational Safety and Health (NIOSH). Completing my National Diploma at NIOSH in
@@ -294,19 +299,13 @@
                         <img src="images/testimonial1.png" alt="Avatar" class="testimonial-avatar">
                         <div>
                             <h4 class="testimonial-name">Niroshan Kosgahakubura</h4>
-                            <div class="testimonial-stars">
-                                <span class="star full">&#9733;</span>
-                                <span class="star full">&#9733;</span>
-                                <span class="star full">&#9733;</span>
-                                <span class="star full">&#9733;</span>
-                                <span class="star outline">&#9733;</span>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
                 <!-- Slide 3 -->
                 <div class="testimonial-slide">
-                    <p class="testimonial-text" style="padding-left: 20px;">
+                    <p class="testimonial-text">
                         NIOSH has been a transformative part of my journey as both a student and an industry leader. The
                         diploma program provided me with a strong foundation in occupational health and safety,
                         equipping me with the knowledge and confidence to excel in a challenging, male-dominated
@@ -320,19 +319,13 @@
                         <img src="images/testimonial1.png" alt="Avatar" class="testimonial-avatar">
                         <div>
                             <h4 class="testimonial-name">Kaushani</h4>
-                            <div class="testimonial-stars">
-                                <span class="star full">&#9733;</span>
-                                <span class="star full">&#9733;</span>
-                                <span class="star full">&#9733;</span>
-                                <span class="star full">&#9733;</span>
-                                <span class="star outline">&#9733;</span>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
                 <!-- Slide 4 -->
                 <div class="testimonial-slide">
-                    <p class="testimonial-text" style="padding-left: 20px;">
+                    <p class="testimonial-text">
                         Im immensely greatfull to NIOSH for their exceptional guidance in Occupational Safety and
                         Health.Through the certificate course , i gained a solid foundation and as i progress with the
                         OSH diploma , my understanding of advanced concept has significantly deepened.Their curriculum
@@ -345,13 +338,7 @@
                         <img src="images/testimonial1.png" alt="Avatar" class="testimonial-avatar">
                         <div>
                             <h4 class="testimonial-name">Thilini</h4>
-                            <div class="testimonial-stars">
-                                <span class="star full">&#9733;</span>
-                                <span class="star full">&#9733;</span>
-                                <span class="star full">&#9733;</span>
-                                <span class="star full">&#9733;</span>
-                                <span class="star outline">&#9733;</span>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
