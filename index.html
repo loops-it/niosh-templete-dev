@@ -105,10 +105,14 @@
                 <div class="carousel-item">
                     <div class="d-flex align-items-center justify-content-start background-image-hero section-padding"
                         style="background-image: url('./images/heroo.png');">
-                        <div class="hero-text">
+                        <div class="hero-text d-none d-lg-block">
                             <h1 class="hero-text1">Play. Watch. Chat. Stay Safe.</h1>
                             <!-- <h2 class="hero-text2">Healthy Workplaces</h2> -->
                         </div>
+                    </div>
+                    <div class="hero-text d-block d-lg-none">
+                        <h1 class="hero-text1-mobile">Play. Watch. Chat. Stay Safe.</h1>
+                        <!-- <h2 class="hero-text2">Healthy Workplaces</h2> -->
                     </div>
                 </div>
             </div>
@@ -178,7 +182,7 @@
         <div class="container-section process-section" style="max-width: 1544px; margin: 0 auto;">
             <div class="text-center">
                 <h3 class="about-heading">Segments</h3>
-                <h2 class="about-title">Revolutionizing Workplace Safety through Smart Learning
+                <h2 class="about-title">Revolutionizing Workplace Safety<br> through Smart Learning
                 </h2>
             </div>
 
@@ -396,19 +400,31 @@
 
                 <div class="col-lg-3 col-md-6 footer-contact">
                     <h5 class="footer-heading">Contacts us</h5>
-                    <p><i class="bi bi-envelope"></i> info@niosh.gov.lk</p>
-                    <p><i class="bi bi-telephone"></i> +94 11 2 585 425</p>
-                    <p><i class="" style="padding-left: 20px;"></i>+94 11 2 556 577</p>
-                    <p><i class="" style="padding-left: 20px;"></i>+94 11 2 598 672</p>
-                    <p><i class="bi bi-geo-alt"></i> No. 97, Jawatta Road,</p>
-                    <p style="padding-left: 28px;">Colombo 05</p>
-
+                    <p><i class="bi bi-envelope"></i> 
+                        <a href="mailto:info@niosh.gov.lk" style="text-decoration: none; color: inherit;">info@niosh.gov.lk</a>
+                    </p>
+                    <p><i class="bi bi-telephone"></i> 
+                        <a href="tel:+94112585425" style="text-decoration: none; color: inherit;">+94 11 2 585 425</a>
+                    </p>
+                    <p><i class="" style="padding-left: 20px;"></i>
+                        <a href="tel:+94112556577" style="text-decoration: none; color: inherit;">+94 11 2 556 577</a>
+                    </p>
+                    <p><i class="" style="padding-left: 20px;"></i>
+                        <a href="tel:+94112598672" style="text-decoration: none; color: inherit;">+94 11 2 598 672</a>
+                    </p>
+                    <p><i class="bi bi-geo-alt"></i> 
+                        <a href="https://goo.gl/maps/example" target="_blank" style="text-decoration: none; color: inherit;">No. 97, Jawatta Road,</a>
+                    </p>
+                    <p style="margin-left: 28px; margin-top: -15px;"> 
+                         Colombo 05</a>
+                    </p>
+                    
                 </div>
             </div>
 
             <div class="footer-bottom row justify-content-between align-items-center" style="max-width: 1544px;">
                 <div class="col-md-6 text-start">
-                    <p>Copyright © 2024 NIOSH | Solution by KodeTech</p>
+                    <p>Copyright © 2024 NIOSH | <a href="https://kodetech.co/">Solution by KodeTech</a></p>
                 </div>
                 <div class="col-md-6 text-end">
                     <p>
@@ -434,6 +450,103 @@
     </script>
 
     <script src="script/script.js"></script>
+
+    <style>
+        #chatButton {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #2a7dce;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          font-size: 30px;
+          cursor: pointer;
+        }
+  
+        #chatPopup {
+          position: fixed;
+          bottom: 10px;
+          right: 10px;
+          width: 600px;
+          height: 620px;
+          background-color: white;
+          border: none;
+          border-radius: 10px;
+          display: none;
+          padding: 0 !important;
+          z-index: 99999999 !important;
+        }
+  
+        #closeButton {
+          background-color: transparent;
+          color: transparent;
+          border: none;
+          cursor: pointer;
+          padding: 5px 10px;
+          border-radius: 5px;
+          position: absolute;
+          top: 30px;
+          right: 18px;
+        }
+  
+        iframe {
+          width: 100% !important;
+          height: 100% !important;
+          border: none;
+          max-width: 600px !important;
+          background-color: #fff !important;
+          border-radius: 8px !important;
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.175);
+        }
+        iframe .container {
+          max-width: 100% !important;
+        }
+        iframe .background {
+          padding: 0px !important;
+        }
+        @media screen and (max-width: 600px) {
+          #chatPopup {
+            width: 100svw;
+            height: 100svh;
+            right: 0px;
+          }
+        }
+      </style>
+      <button id="chatButton"><i class="bi bi-chat-dots-fill"></i></button>
+  
+      <div id="chatPopup">
+        <button id="closeButton">X</button>
+        <iframe
+          src="https://niosh-nine.vercel.app/"
+          style="border: 0px #ffffff none"
+          name="myiFrame"
+          scrolling="no"
+          frameborder="1"
+          marginheight="0px"
+          marginwidth="0px"
+          height="570px"
+          width="600px"
+          allowfullscreen=""
+          allow="microphone"
+        ></iframe>
+      </div>
+  
+      <script>
+        const chatButton = document.getElementById("chatButton");
+        const chatPopup = document.getElementById("chatPopup");
+        const closeButton = document.getElementById("closeButton");
+  
+        chatButton.addEventListener("click", () => {
+          chatPopup.style.display = "block";
+        });
+  
+        closeButton.addEventListener("click", () => {
+          chatPopup.style.display = "none";
+        });
+      </script>
 </body>
 
 </html>
