@@ -19,11 +19,12 @@
 
 <body>
     <!-- navbar-start -->
-    <div class="position-relative top-0 left-0 w-100">
+    <div class="position-fixed top-0 left-0 w-100" style="z-index: 999999; display: flex
+    ; justify-content: center;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="images/logoo.svg" alt="NIOSH Logo" class="logo"> 
+                    <img src="images/logoo.svg" alt="NIOSH Logo" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -57,16 +58,64 @@
         </nav>
     </div>
     <!-- navbar-end -->
-
-    <!-- Hero Image with Text start -->
-
-    <div class="d-flex align-items-center justify-content-start background-image-hero section-padding"
-        style="background-image: url('./images/heroo.png');">
-        <div class="hero-text">
-            <h1 class="hero-text1">Occupational Safety,</h1>
-            <h2 class="hero-text2">Health and Welfare for all</h2>
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators ">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" class=""
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" class=""
+                aria-label="Slide 3"></button>
         </div>
+
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+                <div class="d-flex align-items-center justify-content-start background-image-hero section-padding"
+                    style="background-image: url('./images/heroo.png');">
+                    <div class="hero-text">
+                        <h1 class="hero-text1">“NIOSH” Your Trusted OSH Partner</h1>
+                        <h2 class="hero-text2">We Ensure Your Safety</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Slide -->
+            <div class="carousel-item">
+                <div class="d-flex align-items-center justify-content-start background-image-hero section-padding"
+                    style="background-image: url('./images/heroo.png');">
+                    <div class="hero-text">
+                        <h1 class="hero-text1">Revolutionizing Workplace Safety</h1>
+                        <h2 class="hero-text2">through Smart Learning</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Slide -->
+            <div class="carousel-item">
+                <div class="d-flex align-items-center justify-content-start background-image-hero section-padding"
+                    style="background-image: url('./images/heroo.png');">
+                    <div class="hero-text">
+                        <h1 class="hero-text1">Play. Watch. Chat. Stay Safe.</h1>
+                        <!-- <h2 class="hero-text2">Healthy Workplaces</h2> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button> -->
     </div>
+
+
     <div class="hero-text-mobile">
         <h1 class="hero-text1">Occupational Safety,</h1>
         <h2 class="hero-text2">Health and Welfare for all</h2>
@@ -78,13 +127,16 @@
         style="background-color: #F9F9F9; border-top-left-radius: 30px; border-top-right-radius: 30px; z-index: 1; margin-top: -20px; flex-wrap: wrap;">
         <!-- Top Section- About Us -->
         <div class="container-section about-section">
-            <div class="row align-items-center">
+            <div class="row align-items-center" style=" display: flex !important
+    ; justify-content: center !important; max-width: 1544px;">
                 <div class="col-lg-6 about-content">
-                    <h3 class="about-heading">About Us</h3>
+                    <h3 class="about-heading">About NIOSH</h3>
                     <h2 class="about-title">Occupational Safety,<br>Health & Welfare for all</h2>
                     <p class="about-paragraph">
-                        The National Institute of Occupational Safety and Health was established under the Act No. 38 of 2009 and started its functions since 2011. The goal of the Institute is to provide a world class Occupational Safety and Health (OSH) service to the industry while being a self-financing body. NIOSH is the leader in delivering professional Safety and Health information and services to all our stakeholders.
-                    </p>
+                        NIOSH as a trusted OSH Partner always provide solutions for safety and health issues existing in
+                        your industry. The goal of the Institute is to provide a world class Occupational Safety and
+                        Health (OSH) service to the industry while being a self-financing body. NIOSH is the leader in
+                        delivering professional Safety and Health information and services to all our stakeholders. </p>
                 </div>
                 <div class="col-lg-6">
                     <img src="images/about.png" alt="Industrial Safety" class="img-fluid rounded about-image"
@@ -95,23 +147,25 @@
 
         <!-- About Niosh Section -->
         <div class="container-section about-section">
-            <div class="row align-items-center">
+            <div class="row align-items-center" style="max-width: 1544px;">
                 <div class="col-lg-6">
                     <img src="images/Left About.png" alt="Industrial Safety"
                         class="img-fluid rounded about-image custom-height">
                 </div>
                 <div class="col-lg-6 about-content">
-                    <h3 class="about-heading">Our Vision</h3>
+                    <h3 class="about-heading">Way Forward</h3>
                     <h2 class="about-title">Occupational Safety, Health & Welfare for all</h2>
                     <p class="about-paragraph">
-                        To empower through education, trainings, research, and other relevant interventions for preventing and controlling all forms of work- related hazards to ensure safety, health and welfare at work places To empower through education, trainings, research, and other relevant interventions for preventing and controlling all forms of work- related hazards to ensure safety, health and welfare at work places  To empower through education, trainings, research, and other relevant interventions for preventing and controlling all forms of work- related hazards to ensure safety, health and welfare at work places   To empower through education, trainings, research, and other relevant interventions for preventing and controlling all forms of work- related hazards to ensure safety, health and welfare at work places  
+                        NIOSH is introducing a new Portal to support the industry with AI-powered support bot, a
+                        comprehensive Learning Management System (LMS) and a Membership Portal fostering OSH
+                        professional’s engagement and access to exclusive OSH resources
                     </p>
                 </div>
             </div>
         </div>
 
         <!-- Process Section start -->
-        <div class="container-section process-section">
+        <div class="container-section process-section" style="max-width: 1544px; margin: 0 auto;">
             <div class="text-center">
                 <h3 class="about-heading">Process</h3>
                 <h2 class="about-title">Occupational Safety, Health & <br> Welfare for all</h2>
@@ -120,17 +174,18 @@
             <div class="container">
                 <div class="row justify-content-center text-center position-relative">
                     <!-- Step 1 -->
-                    <div class="col-md-3 process-step">
+                    <div class="col-md-4 process-step">
                         <div class="icon-container">
                             <img src="images/paper.png" alt="Registration Icon" class="process-icon">
                         </div>
                         <div class="polygon-shape">
                             <img src="images/Union.png" alt="Polygon Shape" class="shape-image">
-                            <div class="polygon-text">Registration</div>
+                            <div class="polygon-text">Membership portal</div>
                         </div>
                         <p class="process-text">
-                            Users create accounts on the NIOSH portal, verify emails, upload photos, and are categorized
-                            as License Seekers.
+                            The Membership Portal connects OSH professionals, offering access to exclusive resources,
+                            networking opportunities, industry updates, and tools to enhance their expertise and promote
+                            workplace safety excellence.
                         </p>
                     </div>
 
@@ -138,17 +193,18 @@
                     <img src="images/Arrow.png" alt="Arrow" class="process-arrow">
 
                     <!-- Step 2 -->
-                    <div class="col-md-3 process-step">
+                    <div class="col-md-4 process-step">
                         <div class="icon-container">
                             <img src="images/game.png" alt="Game Play Icon" class="process-icon">
                         </div>
                         <div class="polygon-shape">
                             <img src="images/Union.png" alt="Polygon Shape" class="shape-image">
-                            <div class="polygon-text">Game Play</div>
+                            <div class="polygon-text">LMS</div>
                         </div>
                         <p class="process-text">
-                            Users participate in interactive gameplay to understand safety protocols and complete
-                            challenges.
+                            It gives opportunities to learn and earn exclusive knowledge and practical application which
+                            leads to a CERTIFICATE which supports your future professional development. This will be a
+                            game based learning followed by subject specific new updates on OSH.
                         </p>
                     </div>
 
@@ -156,63 +212,54 @@
                     <img src="images/Arrow.png" alt="Arrow" class="process-arrow">
 
                     <!-- Step 3 -->
-                    <div class="col-md-3 process-step">
+                    <div class="col-md-4 process-step">
                         <div class="icon-container">
                             <img src="images/video.png" alt="Video Icon" class="process-icon">
                         </div>
                         <div class="polygon-shape">
                             <img src="images/Union.png" alt="Polygon Shape" class="shape-image">
-                            <div class="polygon-text">Sector-Specific Video and MCQ</div>
+                            <div class="polygon-text">AI Chat Bot</div>
                         </div>
                         <p class="process-text">
-                            Users watch industry-specific safety videos and answer MCQs to test their understanding of
-                            safety protocols.
+                            The AI Chat bot provides instant OSH knowledge, guidance on safety practices, and seamless
+                            support for incident reporting, ensuring efficient workplace safety management and
+                            compliance. It will give you opportunities to find solutions for your immediate OSH issues.
+
                         </p>
                     </div>
 
-                    <!-- Arrow 3 -->
-                    <img src="images/Arrow.png" alt="Arrow" class="process-arrow">
 
-                    <!-- Step 4 -->
-                    <div class="col-md-3 process-step">
-                        <div class="icon-container">
-                            <img src="images/certificate.png" alt="License Icon" class="process-icon">
-                        </div>
-                        <div class="polygon-shape">
-                            <img src="images/Union.png" alt="Polygon Shape" class="shape-image">
-                            <div class="polygon-text">Getting the License</div>
-                        </div>
-                        <p class="process-text">
-                            Successful completion of quizzes grants users a NIOSH license, qualifying them to work
-                            safely in their sector.
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
         <!-- Process Section end -->
 
         <!-- Testimonial section -->
-        <div class="col-lg-6 about-content testimonial-section">
+        <div class="col-lg-6 about-content testimonial-section" style="max-width: 1544px; margin: 0 auto;">
             <h3 class="about-heading">Testimonials</h3>
-            <h2 class="about-title">Occupational Safety,<br>Health & Welfare for all</h2>
-            <p class="about-paragraph">
-                To empower through education, trainings, research, and other relevant interventions for
-                preventing and controlling all forms of work-related hazards to ensure safety, health and
-                welfare at workplaces.
-            </p>
+            <!-- <h2 class="about-title">Occupational Safety,<br>Health & Welfare for all</h2> -->
+            <!-- <p class="about-paragraph">
+                As your safety partner NIOSH has provided professional trainings with NVQ levels and most of our student working as stock managers in many industries in Sri Lanka and globally.
+            </p>  -->
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 testimonial" style="max-width: 1544px; margin: 0 auto;">
             <div class="testimonial-slider">
                 <!-- Slide 1 -->
                 <div class="testimonial-slide">
                     <p class="testimonial-text" style="padding-left: 20px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Morbi sed </p>
+                        I am thrilled to share my experience with NIOSH where I obtained my diploma in Occupational
+                        Health and Safety. The staff were exceptionally professional and supportive throughout my
+                        studies, providing valuable insights and guidance that significantly enhanced my knowledge and
+                        skills as an engineer, although the diploma is not limited to personal with a technical
+                        background. This diploma not only deepened my understanding of safety protocols and principles
+                        but also opened up new opportunities for foreign employment. I am truly grateful for the
+                        education I received, which has had a profound impact on my career. Thank you, NIOSH, for
+                        providing me with the tools I needed to succeed!
+                    </p>
                     <div class="testimonial-footer">
                         <img src="images/testimonial1.png" alt="Avatar" class="testimonial-avatar">
                         <div>
-                            <h4 class="testimonial-name">W.C.D. De Silva</h4>
+                            <h4 class="testimonial-name">T.G.D. Peiris</h4>
                             <div class="testimonial-stars">
                                 <span class="star full">&#9733;</span>
                                 <span class="star full">&#9733;</span>
@@ -226,12 +273,22 @@
                 <!-- Slide 2 -->
                 <div class="testimonial-slide">
                     <p class="testimonial-text" style="padding-left: 20px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Morbi sed </p>
+                        Reflecting on my career as a Health, Safety, and Environment officer (HSEO) professional, I can
+                        confidently say that my journey began with the invaluable foundation laid by the National
+                        Institute of Occupational Safety and Health (NIOSH). Completing my National Diploma at NIOSH in
+                        2014 (Batch 04) was more than just an academic achievement, it was the catalyst that set me on
+                        the path to becoming an HSE global leader .
+                        NIOSH not only provided me with the technical knowledge and skills essential for ensuring
+                        workplace safety but also instilled a deep commitment to promoting a culture of safety and
+                        responsibility. The comprehensive curriculum, combined with hands-on training and guidance from
+                        experienced instructors, gave me the confidence to navigate complex HSE challenges. Further,
+                        NIOSH DIP was the foundation for My Master's of HSE.
+                        Today, as Deputy General Manager of HSE in One of the largest multinational engineering
+                        companies, overseeing operations across 15 countries.</p>
                     <div class="testimonial-footer">
                         <img src="images/testimonial1.png" alt="Avatar" class="testimonial-avatar">
                         <div>
-                            <h4 class="testimonial-name">Jane Smith</h4>
+                            <h4 class="testimonial-name">Niroshan Kosgahakubura</h4>
                             <div class="testimonial-stars">
                                 <span class="star full">&#9733;</span>
                                 <span class="star full">&#9733;</span>
@@ -245,12 +302,19 @@
                 <!-- Slide 3 -->
                 <div class="testimonial-slide">
                     <p class="testimonial-text" style="padding-left: 20px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Morbi sed </p>
+                        NIOSH has been a transformative part of my journey as both a student and an industry leader. The
+                        diploma program provided me with a strong foundation in occupational health and safety,
+                        equipping me with the knowledge and confidence to excel in a challenging, male-dominated
+                        industry. The exceptional lecturers, practical insights, and interactive learning environment
+                        have been pivotal in shaping my career. Today, as a safety professional at SAGT and the Port of
+                        Colombo, I proudly implement best practices learned at NIOSH. I am deeply grateful to NIOSH for
+                        fostering growth, inspiring leadership, and empowering women to break barriers and lead with
+                        impact. - Kaushani Perera - Senior Executive HSE - SAGT Port of Colombo
+                    </p>
                     <div class="testimonial-footer">
                         <img src="images/testimonial1.png" alt="Avatar" class="testimonial-avatar">
                         <div>
-                            <h4 class="testimonial-name">Jane Smith</h4>
+                            <h4 class="testimonial-name">Kaushani</h4>
                             <div class="testimonial-stars">
                                 <span class="star full">&#9733;</span>
                                 <span class="star full">&#9733;</span>
@@ -264,12 +328,18 @@
                 <!-- Slide 4 -->
                 <div class="testimonial-slide">
                     <p class="testimonial-text" style="padding-left: 20px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Morbi sed </p>
+                        Im immensely greatfull to NIOSH for their exceptional guidance in Occupational Safety and
+                        Health.Through the certificate course , i gained a solid foundation and as i progress with the
+                        OSH diploma , my understanding of advanced concept has significantly deepened.Their curriculum
+                        and practical insights enhancing skills to identify and mitigate workplace hazards.The NIOSH's
+                        expertise and dedication have been truly inspiring.Also the interactive sessions and real world
+                        examples grooming us to address safety challenges.This informative journey with NIOSH has been
+                        shaping my professional growth in OSH.
+                    </p>
                     <div class="testimonial-footer">
                         <img src="images/testimonial1.png" alt="Avatar" class="testimonial-avatar">
                         <div>
-                            <h4 class="testimonial-name">A. Brown</h4>
+                            <h4 class="testimonial-name">Thilini</h4>
                             <div class="testimonial-stars">
                                 <span class="star full">&#9733;</span>
                                 <span class="star full">&#9733;</span>
@@ -295,7 +365,7 @@
 
     </div>
     <!-- Footer starts -->
-    <footer class="footer-section">
+    <footer class="footer-section" style="max-width: 1544px; margin: 0 auto;">
         <div class="container-section" style="margin: 50px; margin-top: 5px;">
             <div class="row justify-content-between" style="padding-bottom: 50px;">
 
@@ -324,10 +394,11 @@
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h5 class="footer-heading">Related Links</h5>
                     <ul>
-                        <li><a href="#">President of Sri Lanka</a></li>
-                        <li><a href="#">Presidential Secretariat of Sri Lanka</a></li>
-                        <li><a href="#">President's Media Division</a></li>
-                        <li><a href="#">Prime Minister's Office</a></li>
+                        <li><a href="https://labourmin.gov.lk" target="_blank">Ministry of Labour</a></li>
+                        <li><a href="https://labourdept.gov.lk" target="_blank">Department of Labour
+                            </a></li>
+                        <li><a href="https://www.ilo.org" target="_blank">ILO</a></li>
+                        <li><a href="https://www.cea.lk" target="_blank">Central Environment Authority</a></li>
                     </ul>
                 </div>
 
@@ -343,7 +414,7 @@
                 </div>
             </div>
 
-            <div class="footer-bottom row justify-content-between align-items-center">
+            <div class="footer-bottom row justify-content-between align-items-center" style="max-width: 1544px;">
                 <div class="col-md-6 text-start">
                     <p>Copyright © 2024 NIOSH | Solution by KodeTech</p>
                 </div>
