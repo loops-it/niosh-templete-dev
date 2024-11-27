@@ -206,7 +206,7 @@ body{
     font-family: 'Poppins', sans-serif;
     border: 1px solid #002E5B;
     padding: 15px;
-    height: 250px;
+    height: 280px;
     width: 100%;
     text-align: left;
 }
@@ -512,7 +512,7 @@ body{
 
 
 .social-icons a {
-    font-size: 30px;
+    font-size: 28px;
     color: #002E5B;
     margin-right: 10px;
     display: inline-block;
@@ -804,7 +804,6 @@ body{
         text-align: center;
         border-top: 1px solid #E3E3E3;
         padding: 15px 10px;
-        margin-bottom: -45px;
     }
 
     .footer-bottom p {
@@ -1087,7 +1086,7 @@ body{
 
     /*footer*/
     .footer-section {
-        padding: 20px 0;
+       
         text-align: left;
     }
 
@@ -1126,7 +1125,7 @@ body{
         margin-top: 70px !important;
         border-top: 1px solid #E3E3E3;
         padding-top: 10px;
-        margin-bottom: -50px;
+        
     }
 
     .footer-links ul,
@@ -1147,6 +1146,9 @@ body{
         font-size: 18px;
         margin-right: 8px;
         color: #002E5B;
+    }
+    .text-start{
+        padding-top: 20px;
     }
 }
 
