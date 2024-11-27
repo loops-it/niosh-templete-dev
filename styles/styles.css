@@ -1138,8 +1138,8 @@ body {
   .footer-contact {
     text-align: left;
     margin-bottom: 20px;
-    flex: 1;
-    min-width: calc(25% - 20px);
+    /* flex: 1; */
+    /* min-width: calc(25% - 20px); */
   }
 
   .footer-heading {
@@ -1177,12 +1177,12 @@ body {
     list-style: none;
   }
 
-  .footer-section .row {
+  /* .footer-section .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-  }
+  } */
 
   .social-icons a {
     font-size: 18px;
