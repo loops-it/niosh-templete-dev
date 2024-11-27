@@ -151,10 +151,12 @@ body {
   line-height: 10px;
   margin-bottom: 15px;
 }
+
 .custom-height {
   height: auto !important;
   width: 100% !important;
 }
+
 .about-title {
   font-size: 40px;
   line-height: 45px;
@@ -187,9 +189,11 @@ body {
   width: 100% !important;
   margin-top: 20px;
 }
+
 .process-section .about-title {
   margin-bottom: 30px;
 }
+
 .process-icon {
   width: 92px;
   height: 92px;
@@ -282,9 +286,11 @@ body {
   animation: fade 1.5s;
   border: none;
 }
+
 .testimonial {
   width: 100% !important;
 }
+
 .testimonial-slide.active {
   display: block;
 }
@@ -293,9 +299,11 @@ body {
   margin-bottom: 50px;
   margin-top: 10px;
 }
+
 .testimonial-section .about-heading {
   text-align: center;
 }
+
 .testimonial-section .about-paragraph {
   margin-right: 50px;
   font-size: 18px;
@@ -328,12 +336,20 @@ body {
   font-family: "Poppins", sans-serif;
   color: #272b34;
 }
+.designation {
+  font-size: 16px;
+}
+.designation {
+  font-size: 16px;
+}
 .carousel-indicators .active {
   background-color: #002e5b !important;
 }
+
 .carousel-indicators [data-bs-target] {
   background-color: #272b34;
 }
+
 .dots-container {
   text-align: center;
   margin-top: 10px;
@@ -354,11 +370,13 @@ body {
 .dot.active {
   background-color: #003366;
 }
+
 .carousel-indicators button {
   height: 12px !important;
   width: 12px !important;
   border-radius: 100% !important;
 }
+
 .star {
   font-size: 30px;
   color: #ffc107;
@@ -377,6 +395,33 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.ILO-section {
+  background-color: #d7d7d7;
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-heading {
+  color: #002e5b;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-right: 50px;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.ilo {
+  height: 12vh;
+  width: auto;
+  align-items: center;
 }
 
 /*footer*/
@@ -645,6 +690,7 @@ body {
     text-align: center;
     width: 100%;
   }
+
   .hero-text1-mobile {
     color: #002e5b;
     font-weight: 700;
@@ -698,10 +744,12 @@ body {
     line-height: 25px;
     margin-bottom: 10px;
   }
+
   .custom-height {
     height: auto !important;
     width: 100% !important;
   }
+
   .about-section .about-title {
     font-size: 25px;
     line-height: 32px;
@@ -740,10 +788,12 @@ body {
   .polygon-text {
     font-size: 18px;
   }
+
   .process-text {
     height: 300px;
     margin-bottom: 30px;
   }
+
   /* testimonial */
   .testimonial-section {
     margin-bottom: 10px;
@@ -875,6 +925,7 @@ body {
     border-left: 3px solid #004080;
     padding-left: 10px;
   }
+
   .navbar-toggler {
     border: none;
     box-shadow: none;
@@ -888,6 +939,7 @@ body {
     box-shadow: none;
     outline: none;
   }
+
   .nav-buttons {
     display: flex;
     flex-direction: column;
@@ -908,6 +960,7 @@ body {
     text-align: center;
     padding-top: 30px;
   }
+
   .hero-text1-mobile {
     color: #002e5b;
     font-weight: 700;
@@ -958,6 +1011,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   .custom-height {
     height: auto !important;
     width: 100% !important;
@@ -1035,6 +1089,7 @@ body {
   .process-section {
     margin-bottom: 60px !important;
   }
+
   .process-section .about-heading {
     font-size: 30px;
     line-height: 28px;
@@ -1128,6 +1183,7 @@ body {
     margin-right: 8px;
     color: #002e5b;
   }
+
   .text-start {
     padding-top: 20px;
   }
@@ -1145,11 +1201,13 @@ body {
   z-index: 1;
   background-repeat: no-repeat;
 }
+
 .carousel-container {
   background-color: #ffffe6;
   justify-content: center;
   display: flex;
 }
+
 #heroCarousel {
   max-width: 1540px;
   width: 100%;
@@ -1160,6 +1218,7 @@ body {
     height: 60vh;
     background-position: right bottom;
   }
+
   .hero-text1 {
     font-size: 40px;
   }
@@ -1167,18 +1226,28 @@ body {
   .hero-text2 {
     font-size: 20px;
   }
+
   .carousel-item {
     height: 60vh;
   }
+
   .hero-text {
     width: 45% !important;
   }
+
   .footer-logo img {
     width: auto;
     height: 60px;
   }
+
   .navbar {
     height: 10vh;
+  }
+  .ilo {
+    height: 10vh;
+  }
+  .about-heading {
+    padding-top: 10px;
   }
 }
 
@@ -1187,9 +1256,11 @@ body {
     height: 50vh;
     background-position: right bottom;
   }
+
   .carousel-item {
     height: 70vh;
   }
+
   .hero-text {
     width: 100% !important;
     padding-top: 20px;
@@ -1211,20 +1282,42 @@ body {
     text-align: center;
     line-height: 25px;
   }
+
   .nav-item {
     border-bottom: solid 1px #79839a27;
   }
+
   .nav-item:last-child {
     border-bottom: solid transparent;
   }
+
   .navbar {
     border-radius: 0px;
     border-bottom-left-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
   }
+
   .shape-image {
     width: 100%;
     height: 120px;
+  }
+  .ILO-section {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .about-heading {
+    margin-right: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .ilo {
+    height: 6vh;
+  }
+  .designation {
+    font-size: 16px;
   }
 }
 
