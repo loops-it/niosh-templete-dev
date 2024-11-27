@@ -1398,26 +1398,39 @@ body {
   z-index: 1;
 }
 
+@media screen and (min-width: 1600px) {
+  .process-text-new {
+    min-height: 150px !important;
+  }
+}
 @media screen and (max-width: 1600px) {
   .process-text-new {
     min-height: 170px !important;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1460px) {
   .process-text-new {
-    min-height: 180px !important;
+    min-height: 190px !important;
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .process-text-new {
+    min-height: 216px !important;
+  }
+}
 @media (min-width: 600px) and (max-width: 1200px) {
   .polygon-text-new {
     font-size: 18px !important;
-    min-height: 54px !important;
+    /* min-height: 54px !important; */
   }
   .process-text-new {
     font-size: 15px !important;
-    min-height: 293px !important;
+    min-height: 270px !important;
+  }
+  .process-card {
+    padding: 20px 10px !important;
   }
 }
 
