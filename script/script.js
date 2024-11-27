@@ -28,7 +28,7 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   
 
-  setTimeout(showSlides, 2000);
+  setTimeout(showSlides, 3500);
 }
 
 function currentSlide(n) {
