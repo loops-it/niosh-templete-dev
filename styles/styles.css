@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 
+body{
+    overflow-x: hidden;
+}
 
 .logo {
     height: 50px;
@@ -558,10 +561,10 @@
 
     .navbar-collapse {
         justify-content: flex-end;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: #ffffff;
         padding: 15px;
         border-radius: 10px;
-        height: 60vh;
+        height: 28vh;
     }
 
     .navbar-light .navbar-nav .nav-link {
@@ -570,6 +573,7 @@
         font-weight: 500;
         text-align: left !important;
     }
+   
 
     .navbar-toggler {
         border: none;
@@ -820,6 +824,10 @@
     .footer-bottom p a:hover {
         text-decoration: underline;
     }
+   
+    .social-icons a {
+        font-size: 20px;
+    }
 }
 
 /* Media Query for Tablets */
@@ -858,7 +866,7 @@
         background-color: rgba(255, 255, 255, 0.9);
         padding: 15px;
         border-radius: 10px;
-        height: 48vh;
+        height: auto;
     }
    
     .navbar-light .navbar-nav .nav-link {
@@ -1129,7 +1137,7 @@
     }
 
     .social-icons a {
-        font-size: 14px;
+        font-size: 18px;
         margin-right: 8px;
         color: #002E5B;
     }
@@ -1177,6 +1185,10 @@
     .hero-text{
         width: 45% !important;
     }
+    .footer-logo img {
+        width: auto;
+        height: 60px;
+    }
 }
 
 @media screen and (max-width: 992px){
@@ -1207,5 +1219,11 @@
         font-size: 18px;
         text-align: center;
         line-height: 25px;
+    }
+    .nav-item{
+        border-bottom: solid 1px #79839a27;
+    }
+    .nav-item:last-child{
+        border-bottom: solid transparent ;
     }
 }
