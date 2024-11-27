@@ -389,8 +389,8 @@
 }
 
 .footer-logo img {
-    width: 170px;
-    height: 60px;
+    width: auto;
+    height: 85px;
 }
 
 .footer-logo p {
@@ -506,7 +506,7 @@
 
 
 .social-icons a {
-    font-size: 16px;
+    font-size: 30px;
     color: #002E5B;
     margin-right: 10px;
     display: inline-block;
