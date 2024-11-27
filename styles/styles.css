@@ -417,11 +417,14 @@ body {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     margin-right: 50px;
+    align-items: center;
+    padding-top: 10px;
 }
 
 .ilo {
     height: 12vh;
     width: auto;
+    align-items: center;
 }
 
 /*footer*/
@@ -1261,6 +1264,10 @@ body {
     .ilo {
         height: 10vh; 
     }
+    .about-heading{
+        padding-top: 10px;
+    }
+    
 }
 
 @media screen and (max-width: 992px) {
