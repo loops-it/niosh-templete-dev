@@ -634,12 +634,6 @@ body {
     padding-right: 0px;
   }
 
-  .logo {
-    margin-left: 0;
-    height: 40px;
-    width: 100px;
-  }
-
   .navbar-light .navbar-nav {
     flex-direction: column;
     margin-top: 10px;
@@ -873,8 +867,17 @@ body {
   }
 }
 
+.logoStyle {
+  width: auto;
+  height: 100px;
+}
 /* Media Query for Tablets */
 @media (min-width: 481px) and (max-width: 991px) {
+  .logo {
+    margin-left: 0px !important;
+    height: auto;
+    width: 100px;
+  }
   /* Navbar */
   .navbar {
     flex-direction: column;
@@ -1258,6 +1261,19 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  .navbar {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: auto !important;
+  }
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+  .logoStyle {
+    width: auto;
+    height: 60px !important;
+  }
   .background-image-hero {
     height: 50vh;
     background-position: right bottom;
